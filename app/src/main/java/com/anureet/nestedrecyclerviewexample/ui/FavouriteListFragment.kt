@@ -1,17 +1,16 @@
 package com.anureet.nestedrecyclerviewexample.ui
 
 import android.os.Bundle
-import android.util.Patterns
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.anureet.nestedrecyclerviewexample.R
 import kotlinx.android.synthetic.main.fragment_favourite_list.*
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 
 
 class FavouriteListFragment : Fragment() {
@@ -21,7 +20,7 @@ class FavouriteListFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        viewModel = ViewModelProviders.of(this).get(FavouriteListViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(FavouriteListViewModel::class.java)
     }
 
     override fun onCreateView(
@@ -42,7 +41,7 @@ class FavouriteListFragment : Fragment() {
 
         add_item.setOnClickListener{
             findNavController().navigate(
-                FavouriteListFragmentDirections.actionFavouriteListFragmentToFavouriteDetailFragment(0)
+                FavouriteListFragmentDirections.actionFavouriteListFragmentToFavouriteDetailFragment()
             )
         }
         viewModel.items.observe(viewLifecycleOwner, Observer{

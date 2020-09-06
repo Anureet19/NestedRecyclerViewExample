@@ -1,18 +1,12 @@
 package com.anureet.nestedrecyclerviewexample.ui
 
 import android.os.Bundle
-import android.support.v4.media.session.MediaSessionCompat.Token.fromBundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
-import androidx.core.content.ContextCompat
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
-import androidx.activity.viewModels
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
 import com.anureet.nestedrecyclerviewexample.R
 import com.anureet.nestedrecyclerviewexample.data.Categories
 import com.anureet.nestedrecyclerviewexample.data.Favourites

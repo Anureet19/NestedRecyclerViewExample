@@ -23,9 +23,5 @@
         android:name="com.anureet.nestedrecyclerviewexample.ui.FavouriteDetailFragment"
         android:label="fragment_favourite_detail"
         tools:layout="@layout/fragment_favourite_detail" >
-        <argument
-            android:name="id"
-            app:argType="long"
-            android:defaultValue="0L"/>
     </fragment>
 </navigation>
