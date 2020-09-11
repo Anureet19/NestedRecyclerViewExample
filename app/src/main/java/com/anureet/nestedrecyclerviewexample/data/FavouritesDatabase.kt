@@ -18,7 +18,7 @@ abstract class FavouritesDatabase : RoomDatabase() {
                 Room.databaseBuilder(
                     context.applicationContext,
                     FavouritesDatabase::class.java,
-                    "task_database"
+                    "favourite_database"
                 ).build().also { instance = it }
             }
     }

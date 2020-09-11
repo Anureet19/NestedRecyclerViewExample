@@ -11,8 +11,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.anureet.nestedrecyclerviewexample.R
 import com.anureet.nestedrecyclerviewexample.data.Categories
 import com.anureet.nestedrecyclerviewexample.data.Category
-import com.anureet.nestedrecyclerviewexample.data.Favourites
-import com.anureet.nestedrecyclerviewexample.data.itemName
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.fragment_favourite_detail.*
 import kotlinx.android.synthetic.main.card_item.*
@@ -36,11 +34,6 @@ class ItemAdapter(val context: Context):
 
     inner class ViewHolder (override val containerView: View) : RecyclerView.ViewHolder(containerView),
         LayoutContainer {
-//        init{
-//            itemView.setOnClickListener{
-//                listener.invoke(getItem(adapterPosition).category)
-//            }
-//        }
 
         fun bind(item: Category){
             with(item){
