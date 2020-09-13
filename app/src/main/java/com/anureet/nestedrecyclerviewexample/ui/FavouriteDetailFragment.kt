@@ -40,12 +40,13 @@ class FavouriteDetailFragment : Fragment() {
         category_spinner.adapter = arrayAdapter
 
         save_button.setOnClickListener {
-            saveTask()
+            saveItem()
         }
     }
 
 
-    private fun saveTask(){
+    private fun saveItem(){
+        // Getting name and category values from edit text
         val name = name.text.toString()
         val category = category_spinner.selectedItemPosition
 

@@ -48,7 +48,6 @@ class FavouriteListFragment : Fragment() {
             (card_list.adapter as ItemAdapter).submitList(it)
         })
 
-
     }
 
 }
